@@ -167,6 +167,7 @@ backend/
 │   ├── api/            # rotas FastAPI (upload, análises, armadilhas)
 │   ├── entities/       # entidades ORM (armadilha, refil, analise)
 │   ├── repositories/   # acesso ao banco
+│   ├── services/       # regras de negócio sem HTTP nem SQL (cálculos, orquestração)
 │   ├── inference/      # pipeline de inferência (imagem → status)
 │   ├── networks/       # definição da U-Net e do baseline OpenCV
 │   └── config/         # configurações e constantes

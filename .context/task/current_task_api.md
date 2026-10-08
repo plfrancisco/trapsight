@@ -74,13 +74,15 @@ especial as seções 3 (nenhum segredo em código), 5 (upload), 6.1 (SQL) e 9
 
 ## API05 — Cálculo de dias até saturar
 
-- [ ] Regressão linear sobre **todas** as análises do refil ativo — nunca
+- [x] Regressão linear sobre **todas** as análises do refil ativo — nunca
       apenas a primeira e a última
-- [ ] Casos sem cálculo (menos de 2 análises, inclinação ≤ 0) retornam
+- [x] Casos sem cálculo (menos de 2 análises, inclinação ≤ 0) retornam
       nulo/zero conforme a tabela da especificação
 
-**Especificação:** `../plan/frontend/telas_spec.md`, seção 5.
-**Dependências:** API03.
+**Especificação:** `../plan/frontend/telas_spec.md`, seções 5 e 6.2.
+**Dependências:** nenhuma — é regra pura, sem HTTP nem banco. A API03 a consome.
+**Local:** `backend/src/services/`.
+**Concluída em:** 2026-10-08.
 
 **Nota:** o método de dois pontos foi descartado por sensibilidade a erro de
 medição — a justificativa completa está na seção 5.1 da especificação e não
@@ -122,7 +124,7 @@ deve ser reaberta sem motivo novo.
 
 # 4. Ordem de execução
 
-API01 → API02 → (API03 e API04 em paralelo) → API05, API06, API07 → API08.
+API01 → API02 → (API04 e API05 em paralelo) → API03 → API06 e API07 → API08.
 
 ---
 
