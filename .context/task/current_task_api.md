@@ -65,12 +65,13 @@ especial as seções 3 (nenhum segredo em código), 5 (upload), 6.1 (SQL) e 9
 
 ## API04 — Stub de inferência
 
-- [ ] Função que recebe imagem e devolve `percentual_coberto`, `status`,
+- [x] Função que recebe imagem e devolve `percentual_coberto`, `status`,
       `modelo_versao`, `mascara` no mesmo formato do contrato real
-- [ ] Documentado como stub temporário, substituível sem alterar chamadores
+- [x] Documentado como stub temporário, substituível sem alterar chamadores
 
 **Especificação:** `../plan/model/modelo_spec.md`, seção 10.
 **Dependências:** nenhuma.
+**Concluída em:** 2026-10-08.
 
 ## API05 — Cálculo de dias até saturar
 
