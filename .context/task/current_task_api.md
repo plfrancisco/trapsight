@@ -92,12 +92,13 @@ deve ser reaberta sem motivo novo.
 
 ## API06 — Endpoint de troca de refil
 
-- [ ] `POST /api/armadilhas/{id}/refis` — encerra o refil ativo e cria o
+- [x] `POST /api/armadilhas/{id}/refis` — encerra o refil ativo e cria o
       novo na mesma transação (atômico)
-- [ ] Se não houver refil ativo, cria apenas o novo
+- [x] Se não houver refil ativo, cria apenas o novo
 
 **Especificação:** `../plan/api/api_spec.md`, seção 5.1.
 **Dependências:** `completed/current_task_banco.md` (DB03).
+**Concluída em:** 2026-10-08.
 
 ## API07 — Endpoint de análise
 
@@ -108,6 +109,8 @@ deve ser reaberta sem motivo novo.
 - [ ] Validação de upload conforme `../rules/security_spec.md`, seção 5 —
       tipo real do arquivo (não extensão), limite de dimensões decodificadas,
       nome de arquivo gerado no servidor (nunca o do cliente)
+- [ ] `GET /api/analises/{id}` — detalhe de uma análise, mesmo formato da
+      resposta do `POST` (`../plan/api/api_spec.md`, seção 6.3)
 
 **Especificação:** `../plan/api/api_spec.md`, seção 6.1.
 **Dependências:** API03, API04.
