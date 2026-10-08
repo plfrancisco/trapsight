@@ -54,14 +54,15 @@ especial as seções 3 (nenhum segredo em código), 5 (upload), 6.1 (SQL) e 9
 
 ## API03 — Endpoints de armadilha
 
-- [ ] `GET /api/armadilhas` — lista com `percentual_atual`, `status`,
+- [x] `GET /api/armadilhas` — lista com `percentual_atual`, `status`,
       `dias_ate_saturar` e `em_alerta_desde` calculados no backend
-- [ ] `POST /api/armadilhas` — com `criar_refil_inicial` opcional
-- [ ] `GET /api/armadilhas/{id}` — detalhe com refil ativo e refis anteriores
-- [ ] `PATCH /api/armadilhas/{id}` — `data_instalacao` não editável
+- [x] `POST /api/armadilhas` — com `criar_refil_inicial` opcional
+- [x] `GET /api/armadilhas/{id}` — detalhe com refil ativo e refis anteriores
+- [x] `PATCH /api/armadilhas/{id}` — `data_instalacao` não editável
 
 **Especificação:** `../plan/api/api_spec.md`, seção 4.
 **Dependências:** `completed/current_task_banco.md` (DB02), API01, API02.
+**Concluída em:** 2026-10-08.
 
 ## API04 — Stub de inferência
 
