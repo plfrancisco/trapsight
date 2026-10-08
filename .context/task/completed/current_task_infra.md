@@ -21,7 +21,7 @@ Cobre ambiente Python, estrutura de pastas e Docker Compose. Não cobre
 código de aplicação (backend, frontend, modelo) nem o pipeline de treino,
 que roda fora do Docker por decisão registrada em `tech_stack.md`, seção 6.1.
 
-**Pré-requisito:** `../current_task_ambiente.md` concluída pela pessoa que vai
+**Pré-requisito:** `current_task_ambiente.md` concluída pela pessoa que vai
 executar esta task — pré-requisitos de software instalados antes de
 inicializar qualquer coisa aqui.
 
@@ -88,7 +88,7 @@ deve ser reaberta.
   API01, `src.main:app`) e build do frontend (depende da FE01,
   `package.json`). A verificação completa é a AMB04.
 - **Desvio aceito:** `POSTGRES_USER=root` é superusuário; ver
-  `../current_task_ambiente.md`, AMB02.
+  `current_task_ambiente.md`, AMB02.
 - **Observação:** em hosts Linux, o bind mount `./data/uploads` é criado como
   root e o usuário `app` do container pode não conseguir gravar. Não afeta
   Windows/Docker Desktop.

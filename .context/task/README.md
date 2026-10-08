@@ -22,7 +22,6 @@ outra especialidade, mesmo quando há dependência entre elas — a dependência
 
 | Arquivo | Estado | Especialidade |
 |---|---|---|
-| `current_task_ambiente.md` | ATIVA | Pré-requisito de todas as demais — configuração local de cada integrante |
 | `current_task_api.md` | ATIVA | Backend FastAPI — 8 endpoints e stub de inferência |
 | `current_task_frontend.md` | ATIVA | Interface web — as 4 telas do MVP |
 | `current_task_modelo.md` | ATIVA | Especificação de treino, dataset sintético, baseline, treino da U-Net, avaliação |
@@ -38,6 +37,7 @@ Não podem ser alterados sem autorização explícita.
 
 | Arquivo | Escopo | Concluída em |
 |---|---|---|
+| `completed/current_task_ambiente.md` | Configuração local, arquivos de ambiente e verificação do ambiente completo | 2026-10-08 |
 | `completed/current_task_infra.md` | Ambiente Python, estrutura de pastas, Docker Compose | 2026-10-02 |
 | `completed/current_task_banco.md` | Migration, entidades ORM, regra de integridade do refil ativo | 2026-10-02 |
 
@@ -47,8 +47,7 @@ Não podem ser alterados sem autorização explícita.
 
 1. `.context/rules/ai_development_rules.md`
 2. documentos normativos em `.context/plan/`
-3. `current_task_ambiente.md` — nenhuma outra task deve ser iniciada antes
-   desta estar concluída pelo integrante em questão
+3. `completed/current_task_ambiente.md` — pré-requisito de todas as tasks
 4. arquivo de task **ativo** da especialidade em questão
 5. arquivos históricos, somente para contexto
 

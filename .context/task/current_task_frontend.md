@@ -24,11 +24,12 @@ Cobre as 4 telas do MVP. Não cobre a tela de comparação com o baseline
 
 ## FE01 — Setup do projeto
 
-- [ ] Vite + React + TypeScript + Tailwind configurados
-- [ ] `VITE_API_URL` lido de variável de ambiente
+- [x] Vite + React + TypeScript + Tailwind configurados
+- [x] `VITE_API_URL` lido de variável de ambiente
 
 **Especificação:** `../plan/foundation/tech_stack.md`, seção 3.
 **Dependências:** `completed/current_task_infra.md` (INFRA02).
+**Concluída em:** 2026-10-08.
 
 ## FE02 — Camada de serviços da API
 

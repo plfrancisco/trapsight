@@ -74,7 +74,7 @@ internet.
 |---|---|
 | Nenhum segredo é escrito diretamente em código-fonte, em nenhuma linguagem do projeto | Nem "temporariamente para testar" — um valor hardcoded esquecido é a causa mais comum de vazamento de credencial |
 | Todo segredo é lido exclusivamente de variável de ambiente | Nunca de arquivo de configuração versionado, nunca de constante no código |
-| `.env` contém os valores reais e está no `.gitignore`; `.env.example` contém apenas placeholders e é o único versionado | Conforme `../task/current_task_ambiente.md`, AMB03 — os exemplos ali já seguem esta regra |
+| `.env` contém os valores reais e está no `.gitignore`; `.env.example` contém apenas placeholders e é o único versionado | Conforme `../task/completed/current_task_ambiente.md`, AMB03 — os exemplos ali já seguem esta regra |
 | Nenhum segredo aparece em log, mensagem de erro, resposta de API, commit message ou comentário de código | Ver também seção 9 (tratamento de erro) |
 | Nenhum segredo é copiado para dentro de uma imagem Docker em tempo de build | Entra apenas via variável de ambiente em tempo de execução — ver seção 10.1 |
 | Se um segredo for commitado por engano, ele é considerado comprometido | Trocar o segredo é obrigatório; remover do arquivo atual não é suficiente — ele permanece no histórico do Git |

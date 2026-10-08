@@ -1,7 +1,7 @@
 # CURRENT TASK — CONFIGURAÇÃO DE AMBIENTE — Projeto Integrador
 
 **Versão:** 1.0
-**Status:** ATIVA
+**Status:** CONCLUÍDA (2026-10-08)
 **Escopo:** o que cada integrante do grupo precisa preparar na própria
 máquina antes de qualquer outra task começar
 
@@ -12,10 +12,10 @@ máquina antes de qualquer outra task começar
 Garantir que qualquer pessoa do grupo consiga clonar o repositório e ter o
 projeto rodando localmente, sem depender de conhecimento não documentado.
 Esta task é **pré-requisito de todas as outras** — nenhuma task de
-`completed/current_task_infra.md` em diante deve ser iniciada antes desta estar
+`current_task_infra.md` em diante deve ser iniciada antes desta estar
 concluída.
 
-Diferença em relação a `completed/current_task_infra.md`: aquela cria a estrutura do
+Diferença em relação a `current_task_infra.md`: aquela cria a estrutura do
 repositório (uma vez, por quem inicia o projeto); esta é o que **cada
 integrante** repete na própria máquina para conseguir trabalhar.
 
@@ -25,7 +25,7 @@ integrante** repete na própria máquina para conseguir trabalhar.
 
 Cobre pré-requisitos de software, variáveis de ambiente e verificação de que
 o ambiente sobe. Não cobre a criação da estrutura de pastas em si
-(`completed/current_task_infra.md`, INFRA02) nem a escrita de código de aplicação.
+(`current_task_infra.md`, INFRA02) nem a escrita de código de aplicação.
 
 ---
 
@@ -63,7 +63,7 @@ pelo usuário.
   apenas no projeto via `uv` (ex.: `uv python pin 3.12`), sem alterar o
   Python da máquina.
 
-**Especificação:** `../plan/foundation/tech_stack.md`, seções 2, 3 e 7.
+**Especificação:** `../../plan/foundation/tech_stack.md`, seções 2, 3 e 7.
 **Dependências:** nenhuma.
 
 ## AMB02 — Clonar e configurar o repositório
@@ -82,11 +82,11 @@ credenciais do `.env` da raiz devem coincidir com a `DATABASE_URL` de
 
 **Desvio aceito (somente desenvolvimento local):** o usuário do Postgres em
 desenvolvimento é `root`, o que o torna superusuário — contraria a
-recomendação de menor privilégio de `../rules/security_spec.md`, seção 6.2.
+recomendação de menor privilégio de `../../rules/security_spec.md`, seção 6.2.
 Aceito porque o banco não publica porta no host e o ambiente não é exposto.
 Não replicar em qualquer ambiente fora da máquina de desenvolvimento.
 
-**Especificação:** `../plan/api/api_spec.md`, seção 2.6.
+**Especificação:** `../../plan/api/api_spec.md`, seção 2.6.
 **Dependências:** AMB01.
 
 ## AMB03 — Arquivos de exemplo de variáveis de ambiente
@@ -128,7 +128,7 @@ LIMIAR_TROCAR=70
 VITE_API_URL=http://localhost:8000/api
 ```
 
-**Especificação:** `../plan/api/api_spec.md`, seção 2.6 (tabela completa de
+**Especificação:** `../../plan/api/api_spec.md`, seção 2.6 (tabela completa de
 variáveis, obrigatoriedade e valores padrão).
 **Dependências:** nenhuma — pode ser feita antes de AMB02 por quem primeiro
 monta a estrutura, e reaproveitada pelos demais integrantes.
@@ -139,14 +139,15 @@ inferência (`current_task_api.md`, API04), que não depende deste arquivo.
 
 ## AMB04 — Verificação
 
-- [ ] `docker compose up` sobe sem erro (Postgres, backend, frontend)
-- [ ] Backend responde em `/docs`
-- [ ] Frontend carrega em `http://localhost:5173`
-- [ ] `uv run ruff check .` roda sem erro de configuração (mesmo com poucos
+- [x] `docker compose up` sobe sem erro (Postgres, backend, frontend)
+- [x] Backend responde em `/docs`
+- [x] Frontend carrega em `http://localhost:5173`
+- [x] `uv run ruff check .` roda sem erro de configuração (mesmo com poucos
       arquivos ainda)
 
+**Concluída em:** 2026-10-08.
 **Dependências:** AMB01, AMB02, AMB03, e a estrutura de
-`completed/current_task_infra.md` já criada.
+`current_task_infra.md` já criada.
 
 ---
 
