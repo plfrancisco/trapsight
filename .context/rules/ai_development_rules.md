@@ -239,6 +239,23 @@ cronograma:
 | `# Padrão: não informado na spec.` | `# Obrigatória.` |
 | `# TODO: fazer na DB03` | `# TODO: impedir dois refis ativos na mesma armadilha (índice único parcial).` |
 
+## 8.2 Nomes no código
+
+Os nomes seguem uma convenção única, para que o código seja previsível:
+
+- **Substantivos de domínio em português**, iguais aos do modelo de dados:
+  `armadilha`, `refil`, `analise`, `percentual_coberto`, `data_troca`.
+  O valor persistido de `status` não tem acento (`atencao`).
+- **Verbos e termos técnicos em inglês**, quando consagrados: `create`,
+  `get_by_id`, `list_by_refil`, `close`, `session`, `engine`. Um método une
+  as duas partes, como em `get_active_for_armadilha`.
+- **Exceções de domínio em português**, herdando de `ErroDeDominio`
+  (`IdentificadorDuplicado`, `RefilAtivoExistente`).
+- **Valores fixos do domínio num enum** (`StatusAnalise`), nunca repetidos como
+  texto solto pelo código.
+- Não misturar idiomas dentro do mesmo termo de domínio (`trap`,
+  `trapId`): usar sempre o nome em português do modelo de dados.
+
 ---
 
 # 9. Regras específicas de visão computacional e ML
