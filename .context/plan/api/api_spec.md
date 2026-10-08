@@ -88,7 +88,7 @@ podem ser reescritas sem aviso, códigos não.
 | Tamanho máximo | 10 MB |
 | Formatos aceitos | JPEG, PNG |
 | Resolução mínima | 512 px no maior lado |
-| Resolução máxima | Sem limite — a imagem é redimensionada no pré-processamento |
+| Resolução máxima | 20 milhões de pixels decodificados — protege contra *decompression bomb*; acima disso a resposta é `413` `ARQUIVO_MUITO_GRANDE`. Dentro do limite, a imagem é redimensionada no pré-processamento |
 
 O mínimo de 512 px decorre da resolução de entrada do modelo, definida em
 `../model/modelo_spec.md`, seção 6. Imagens menores seriam ampliadas, sem

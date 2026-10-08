@@ -102,18 +102,19 @@ deve ser reaberta sem motivo novo.
 
 ## API07 — Endpoint de análise
 
-- [ ] `POST /api/analises` — valida arquivo, localiza refil ativo, persiste
+- [x] `POST /api/analises` — valida arquivo, localiza refil ativo, persiste
       imagem, executa inferência (via stub, API04), persiste análise
-- [ ] Falha na inferência não persiste registro parcial e remove a imagem
+- [x] Falha na inferência não persiste registro parcial e remove a imagem
       gravada
-- [ ] Validação de upload conforme `../rules/security_spec.md`, seção 5 —
+- [x] Validação de upload conforme `../rules/security_spec.md`, seção 5 —
       tipo real do arquivo (não extensão), limite de dimensões decodificadas,
       nome de arquivo gerado no servidor (nunca o do cliente)
-- [ ] `GET /api/analises/{id}` — detalhe de uma análise, mesmo formato da
+- [x] `GET /api/analises/{id}` — detalhe de uma análise, mesmo formato da
       resposta do `POST` (`../plan/api/api_spec.md`, seção 6.3)
 
 **Especificação:** `../plan/api/api_spec.md`, seção 6.1.
 **Dependências:** API03, API04.
+**Concluída em:** 2026-10-08.
 
 ## API08 — Histórico e imagens
 
