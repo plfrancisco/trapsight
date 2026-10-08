@@ -32,14 +32,15 @@ especial as seções 3 (nenhum segredo em código), 5 (upload), 6.1 (SQL) e 9
 
 ## API01 — Esqueleto FastAPI
 
-- [ ] App inicializa e expõe `/docs`
-- [ ] CORS lido de `CORS_ORIGENS`
-- [ ] Variáveis de ambiente lidas na inicialização: `DATABASE_URL`,
+- [x] App inicializa e expõe `/docs`
+- [x] CORS lido de `CORS_ORIGENS`
+- [x] Variáveis de ambiente lidas na inicialização: `DATABASE_URL`,
       `MODEL_WEIGHTS_PATH`, `MODEL_VERSION`, `UPLOADS_DIR`, `CORS_ORIGENS`,
       `LIMIAR_ATENCAO`, `LIMIAR_TROCAR`
 
 **Especificação:** `../plan/api/api_spec.md`, seção 2.6.
 **Dependências:** `completed/current_task_infra.md` (INFRA01, INFRA02).
+**Concluída em:** 2026-10-08.
 
 ## API02 — Formato padronizado de erro
 
