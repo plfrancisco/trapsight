@@ -76,6 +76,10 @@ podem ser reescritas sem aviso, códigos não.
 | `VALIDACAO_FALHOU` | 422 | Campo obrigatório ausente ou inválido |
 | `PLACA_NAO_DETECTADA` | 500 | Modelo não localizou a superfície adesiva |
 | `FALHA_INFERENCIA` | 500 | Erro durante a execução do modelo |
+| `REQUISICAO_INVALIDA` | 400 | Requisição rejeitada pelo framework antes de chegar à rota (ex.: corpo multipart malformado) |
+| `ROTA_NAO_ENCONTRADA` | 404 | Rota inexistente |
+| `METODO_NAO_PERMITIDO` | 405 | Método HTTP não aceito pela rota |
+| `ERRO_INTERNO` | 500 | Falha inesperada; a mensagem é genérica e o detalhe fica só no log do servidor |
 
 ## 2.4 Restrições de upload
 
